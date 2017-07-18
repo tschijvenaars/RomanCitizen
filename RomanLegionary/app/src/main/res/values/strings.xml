@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Roman Legionary</string>
+    <string name="action_settings">Settings</string>
+    <string name="startBut">Start</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_background">BackgroundActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="backgroundStory">These are the 340\'s. The Roman empire has been split in the Western- and Eastern part. Constantinople, capital of Emperor Constantius II, becomes the largest city in the world, taking the lead from Rome, capital of his brother Constans I. The Roman emperor of the central part of the Roman empire Constantine II, ruling over the upper Danube, Italy and middle Africa, crosses the Alps and against the army of his brother Constans I, emperor of the western part of the Roman Empire: Britain, Gaul, the Rhine provinces and Iberia. They clash at Aquileia in northern Italy. Constans campaigns victoriously against the Franks. The Eastern Roman Emperor Constantius II campaigns in eastern Mesopotamia against the Sassanid Persians. These are turbulent times. Be sure to watch out...</string>
+    <string name="aboutStory">--</string>
+</resources>
