@@ -1,17 +1,10 @@
 package com.portfolio.timsoft.romanlegionary.ui;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,7 +13,12 @@ import android.widget.Toast;
 
 import com.portfolio.timsoft.romanlegionary.R;
 import com.portfolio.timsoft.romanlegionary.model.Page;
-import com.portfolio.timsoft.romanlegionary.model.StoryTelling;
+import com.portfolio.timsoft.romanlegionary.model.Story;
+import com.portfolio.timsoft.romanlegionary.model.StoryTelling3;
+import com.portfolio.timsoft.romanlegionary.model.StoryTelling2;
+import com.portfolio.timsoft.romanlegionary.model.StoryTelling1;
+
+import java.util.Objects;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -32,11 +30,8 @@ public class StartActivity extends AppCompatActivity {
     Button choice2;
     Button choice3;
 
-    ImageView stats;
-    ImageView settings;
-    ImageView home;
     private Page mCurrentPage;
-    private StoryTelling story;
+    private Story story;
 
 
 
@@ -61,10 +56,18 @@ public class StartActivity extends AppCompatActivity {
         choice2.setTypeface(face);
         choice3.setTypeface(face);
 
-        choice1.setText("Start Journey");
+        choice1.setText(R.string.startJourney);
         choice2.setVisibility(View.INVISIBLE);
         choice3.setVisibility(View.INVISIBLE);
-        story = new StoryTelling();
+
+        String storyName = getIntent().getStringExtra("start");
+        if(Objects.equals(storyName, "citizen")){
+            story = new StoryTelling1();
+        }else if(Objects.equals(storyName, "slave")){
+            story = new StoryTelling2();
+        }else{
+            story = new StoryTelling3();
+        }
         loadPage(0);
     }
 
@@ -86,7 +89,7 @@ public class StartActivity extends AppCompatActivity {
         String text = mCurrentPage.getText();
         storyText.setText(text);
 
-        if(mCurrentPage.getChoice1().getText() == "Main Menu"){
+        if(Objects.equals(mCurrentPage.getChoice1().getText(), "Main Menu")){
             mCurrentPage.setIsEnd(true);
         }
 

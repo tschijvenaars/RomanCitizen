@@ -5,13 +5,9 @@ import com.portfolio.timsoft.romanlegionary.R;
 /**
  * Created by timsc on 16-4-2016.
  */
-public class StoryTelling {
+public class StoryTelling1 implements Story {
 
-    private Page[] pages;
-
-    public StoryTelling() {
-        pages = new Page[48];
-
+    public StoryTelling1() {
         /*********************************************************************/
         pages[0] = new Page(
                 R.drawable.ic_roman_citizen,
