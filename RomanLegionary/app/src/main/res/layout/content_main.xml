@@ -66,17 +66,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start as Senator"
-                android:layout_marginTop="24sp"
-                android:id="@+id/startStory3But"
-                android:textColor="@color/colorYellow"
-                android:layout_gravity="center_horizontal"
-                android:textSize="12sp"
-                android:onClick="onClickStart3" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Background"
                 android:id="@+id/backgroundBut"
                 android:layout_marginTop="24sp"

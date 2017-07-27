@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         startButton1 = (TextView)findViewById(R.id.startStory1But);
         startButton2 = (TextView)findViewById(R.id.startStory2But);
-        startButton3 = (TextView)findViewById(R.id.startStory3But);
+        //startButton3 = (TextView)findViewById(R.id.startStory3But);
         backgroundButton = (TextView)findViewById(R.id.backgroundBut);
         settingsButton = (TextView)findViewById(R.id.settingsBut);
         exitButton = (TextView)findViewById(R.id.exitBut);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Typeface face = Typeface.createFromAsset(getAssets(),"fonts/pixelFont.ttf");
         startButton1.setTypeface(face);
         startButton2.setTypeface(face);
-        startButton3.setTypeface(face);
+        //startButton3.setTypeface(face);
         backgroundButton.setTypeface(face);
         settingsButton.setTypeface(face);
         exitButton.setTypeface(face);
@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void onClickStart3(View v) {
-        Intent i=new Intent(MainActivity.this, StartActivity.class);
-        i.putExtra("start", "senator");
-        startActivity(i);
-    }
+//    public void onClickStart3(View v) {
+//        Intent i=new Intent(MainActivity.this, StartActivity.class);
+//        i.putExtra("start", "senator");
+//        startActivity(i);
+//    }
 
     public void onClickBack(View v) {
         Intent i=new Intent(MainActivity.this, BackgroundActivity.class);

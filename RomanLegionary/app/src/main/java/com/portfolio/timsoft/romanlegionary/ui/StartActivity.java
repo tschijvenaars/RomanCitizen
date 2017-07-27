@@ -65,7 +65,7 @@ public class StartActivity extends AppCompatActivity {
             story = new StoryTelling1();
         }else if(Objects.equals(storyName, "slave")){
             story = new StoryTelling2();
-        }else{
+        }else if(Objects.equals(storyName, "Barbarian")){
             story = new StoryTelling3();
         }
         loadPage(0);

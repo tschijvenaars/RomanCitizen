@@ -33,9 +33,12 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         android:id="@+id/character"
+        android:paddingTop="64dp"
+        android:paddingBottom="18dp"
         android:layout_alignBottom="@+id/backImage"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_roman_citizen" />
+        android:src="@drawable/ic_roman_citizen"
+        android:layout_alignParentTop="true" />
 
 
     <RelativeLayout
