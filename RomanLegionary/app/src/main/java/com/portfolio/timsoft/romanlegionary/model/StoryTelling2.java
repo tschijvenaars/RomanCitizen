@@ -357,7 +357,7 @@ public class StoryTelling2 implements Story {
                         "Brutus however, is appealing to the public by cheering and shouting. He really takes his time. What are you doing?",
                 new Choice("Taunt him",44),
                 new Choice("Charge him",39),
-                new Choice("Wait until he is finished",41)
+                new Choice("Wait until he is finished",52)
         );
         /********************************* Aggr. Taunt *************************************/
         pages[44] = new Page(
@@ -387,20 +387,60 @@ public class StoryTelling2 implements Story {
                 R.drawable.stadium2,
                 "He runs towards you. As he gets really close, you see he tries to tackle you and hit you with his swords. You quickly jump out of the way. " +
                         "As Brutus did not expect your move because of his rage, he falls over. Now is your chance! You run at him and try to hit him. One hit! A block with his swords! Another block! Another hit! " +
-                        "He carefully stands up while blocking all your hits. You should think of something else to beat him!",
-                new Choice("Stand up",41)
+                        "He carefully stands up while blocking all your hits. You should think of something else to beat him! Lets play dirty!",
+                new Choice("Play dirty",49)
         );
         pages[48] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
-                "You keep walking towards him. ",
-                new Choice("Keep walking towards him",48)
+                "You keep walking towards him. He stops cheering and looks at you. You stop for a second. He starts running your way. You start running too. What should you do?",
+                new Choice("Brace for impact",46),
+                new Choice("Start running at him too",40)
+        );
+        pages[49] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You decide to play dirty. Brutus is now bleeding, but still way to powerful to fight head on. You wait until Brutus is walking towards you. You start walking backwards and you fake falling over. " +
+                        "During this fall, you grab some sand in one of your hands. Then you stand up and stop walking backwards. " +
+                        "Brutus must think you're weak, tripping while you are walking. He keeps walking at you while you are staring him in the eyes. When he is only a few meters away, you swing your sword.",
+                new Choice("Swing sword",50)
+        );
+        pages[50] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "Brutus reacts. While he flinches, you throw the sand in his eyes. The sand hits his eyes as soon as he opens them again. He roars out of pain." +
+                        "\"Wraaagh, you weakling!\", he shouts. He starts swinging his swords around with his eyes closed. You walk sidewards, up until you can hit his back. " +
+                        "Now is your chance, hit him!",
+                new Choice("Stab him",51)
+        );
+        pages[51] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You stab him in his lungs from the back. Brutus screams. You must have hit him in the lungs. \"Aaaaargh\", he screams as he falls on his knees. \"Kill me now\", he says. ",
+                new Choice("Stab him again",99)
         );
         /********************************* Aggr. Wait *************************************/
-
+        pages[52] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "He surely takes his time. You decide to wait until he is finished cheering. It's intimidating. The crowd wants to see you dead. They are all rooting for him. " +
+                        "The crowd is going wild. Brutus now stands still, looking at you. You decide to walk in his way. \"WRAAAAGHHHH\", he roars meanwhile. He is bloodthirsty.",
+                new Choice("Keep walking towards him",48),
+                new Choice("Stop walking and spit his way",45)
+        );
         /********************************* Defensive *************************************/
-
-
+        pages[53] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "Lets try to defend yourself. Maybe that's wise this time. Brutus is really big. You have to play smart and dirty to get him down. ",
+                new Choice("Wait for his actions",54)
+        );
+        pages[54] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "",
+                new Choice("Wait for his action",48)
+        );
         /********************************* Good ending Fight 2 *************************************/
         pages[19] = new Page(
                 R.drawable.ic_slave_gladiator_noob_sword_shield,
