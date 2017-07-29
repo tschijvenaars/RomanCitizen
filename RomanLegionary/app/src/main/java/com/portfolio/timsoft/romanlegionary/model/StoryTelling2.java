@@ -322,7 +322,7 @@ public class StoryTelling2 implements Story {
         pages[39] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
-                "You chose to charge him. He might be big, but in the past, some quick action always worked. As soon as you are close to each other, you start running at Brutus. " +
+                "You chose to charge him. He might be big, but in the past, some quick action always worked. You start running at Brutus with your weapon ready. " +
                         "Wait, what is he doing now? He is charging at you too! What should you do?",
                 new Choice("Keep charging",40),
                 new Choice("Try to dodge Brutus",42)
@@ -353,17 +353,51 @@ public class StoryTelling2 implements Story {
         pages[43] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
-                "You decide to try to dodge your opponent. Sadly, Brutus is really big and he fought a lot of fights. You soon acknowledge your action is hopeless. Brutus tackles you with all his power. You get knocked on the ground really hard. " +
-                        "You should stand up before something bad happens.",
-                new Choice("Stand up",41)
+                "You decide to be aggressive. He might be big, but that just means he falls harder. You take a deep breath, in through your nose and out through your mouth. You are standing in the ring, ready to fight. " +
+                        "Brutus however, is appealing to the public by cheering and shouting. He really takes his time. What are you doing?",
+                new Choice("Taunt him",44),
+                new Choice("Charge him",39),
+                new Choice("Wait until he is finished",41)
         );
+        /********************************* Aggr. Taunt *************************************/
         pages[44] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
-                "You decide to try to dodge your opponent. Sadly, Brutus is really big and he fought a lot of fights. You soon acknowledge your action is hopeless. Brutus tackles you with all his power. You get knocked on the ground really hard. " +
-                        "You should stand up before something bad happens.",
+                "You chose to taunt him. You think it takes too long! While he keeps doing his thing, you start walking his way. He notices it, but isn't bothered. " +
+                        "He doesn't seem scared about you. Maybe you can use his underestimation against him. ",
+                new Choice("Keep walking towards him",48),
+                new Choice("Stop walking and spit his way",45)
+        );
+        pages[45] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You stop walking to him. He looks at you for a second. While he does that, you spit in his way. Suddenly he stops cheering to the public. " +
+                        "You caught him! You dishonored him. He must be furious. He suddenly starts running at you, way faster then expected. He runs so hard, you might be able to dodge him.",
+                new Choice("Dodge him",47),
+                new Choice("Brace for impact",46)
+        );
+        pages[46] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "Brace for impact! As he comes closer, you start to get worried, he is really big. This is going to hurt! BOOM! He hits you. Really hard and you fall on the ground.",
                 new Choice("Stand up",41)
         );
+        pages[47] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "He runs towards you. As he gets really close, you see he tries to tackle you and hit you with his swords. You quickly jump out of the way. " +
+                        "As Brutus did not expect your move because of his rage, he falls over. Now is your chance! You run at him and try to hit him. One hit! A block with his swords! Another block! Another hit! " +
+                        "He carefully stands up while blocking all your hits. You should think of something else to beat him!",
+                new Choice("Stand up",41)
+        );
+        pages[48] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You keep walking towards him. ",
+                new Choice("Keep walking towards him",48)
+        );
+        /********************************* Aggr. Wait *************************************/
+
         /********************************* Defensive *************************************/
 
 
