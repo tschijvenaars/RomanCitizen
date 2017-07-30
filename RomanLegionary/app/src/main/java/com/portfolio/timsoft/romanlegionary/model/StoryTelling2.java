@@ -78,7 +78,7 @@ public class StoryTelling2 implements Story {
                 R.drawable.trainingground,
                 "A few hours pass. You take some beatings and give some beatings. You regret the mistakes you made today. What could I have done different? You get nervous " +
                         "thinking about the upcoming battle. Am I going to survive?",
-                new Choice("Go to sleep",99)
+                new Choice("Go to sleep",22)
         );
         pages[10] = new Page(
                 R.drawable.ic_slave_gladiator_noob_sword,
@@ -99,7 +99,7 @@ public class StoryTelling2 implements Story {
         /********************************** No volunteer ************************************/
         pages[4] = new Page(
                 R.drawable.ic_slave_gladiator_noob_sword,
-                R.drawable.forest,
+                R.drawable.trainingground,
                 "Why would you volunteer? It's dangerous! \"No volunteers huh?\", the slave master shouts, \"You there!\". He points at a really fragile looking slave. " +
                         "He looks scared. As he and the slave master both prepare to start the mock-fight, you and the other slaves watch. " +
                         "Then the fight begins, only to end a little while later. As the slave master charges at the slave, the slave obviously didn't know what to do. " +
@@ -249,12 +249,12 @@ public class StoryTelling2 implements Story {
         );
         /********************************* Bad ending Fight 1 *************************************/
         pages[21] = new Page(
-                R.drawable.ic_slave_gladiator_noob_sword_shield,
+                R.drawable.ic_slave_gladiator_noob_dead,
                 R.drawable.stadium,
                 "You are in so much pain. You hear the crowd shouting. They want to see more blood. Then it gets really silent. " +
                         "Your vision blurs. Suddenly you hear the crowd shouting and cheering again. I guess this is the end... " +
                         "That is your last thought. You died.",
-                new Choice("Main Menu",1)
+                new Choice("The Afterlife",66)
         );
         /********************************* Survived Battle one *************************************/
         pages[30] = new Page(
@@ -335,12 +335,12 @@ public class StoryTelling2 implements Story {
                 new Choice("Stand up",41)
         );
         pages[41] = new Page(
-                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.ic_slave_gladiator_experienced_dead,
                 R.drawable.stadium2,
                 "You stand up, feeling faint. You also have headaches and your vision is blurred. That charge gave you an concussion. That man really is a giant. You see him walking at you and he starts running again. " +
                         "You are too weak to do something. Next moment you feel a hard tackle. You lose consciousness. Brutus stands near your body and appeals to the public. It's clear they want you to die. " +
                         "Brutus kills you...",
-                new Choice("The Afterlife",99)
+                new Choice("The Afterlife",66)
         );
         pages[42] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
@@ -417,7 +417,7 @@ public class StoryTelling2 implements Story {
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
                 "You stab him in his lungs from the back. Brutus screams. You must have hit him in the lungs. \"Aaaaargh\", he screams as he falls on his knees. \"Kill me now\", he says. ",
-                new Choice("Stab him again",99)
+                new Choice("Stab him again",62)
         );
         /********************************* Aggr. Wait *************************************/
         pages[52] = new Page(
@@ -438,25 +438,100 @@ public class StoryTelling2 implements Story {
         pages[54] = new Page(
                 R.drawable.ic_slave_gladiator_experienced_sword_bucket,
                 R.drawable.stadium2,
-                "",
-                new Choice("Wait for his action",48)
+                "Brutus and you are preparing to fight. The crowd is going insane. Someone is going to die today. You both walk focused to the middle of the ring and stop when you are only a few meters away from each other. " +
+                        "Lets fight! Brutus comes at you and swings his swords. BAM! That hit was hard. You didn't expect him to be that strong. It took a lot of energy to withstand that hit. Maybe it's best to avoid taking a lot of those deadly blows. " +
+                        "He is going to strike again. What are you going to do?",
+                new Choice("Try to hit him quickly",55),
+                new Choice("Jump out of the way",57),
+                new Choice("Stand your ground",63)
+        );
+        pages[55] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "\"He's big, so maybe he is slow.\", you think. You then try to quickly land a stab at his legs. Sadly, he uses one of his swords to block the attack, while the other arm swings from above. Trying to block the attack, you hold up your buckler shield. " +
+                        "Obviously, this isn't very effective, as it is too small. His strong blow negates your shield block and his sword slashes right into your shoulder. You scream out loud. ",
+                new Choice("Be in pain",56)
+        );
+        pages[56] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_dead,
+                R.drawable.stadium2,
+                "You fall on the ground with your knees. You drop your sword and grab the wound with you hand. It hurts so much! Everything around you turns gray. You look up. You see the silhouette of Brutus. He makes a vague move which makes you fall on your back on the ground. " +
+                        "All you see is a bright sky and the silhouette of Brutus. He makes another unknown move. Then everything turns black. You are dead. ",
+                new Choice("The Afterlife",66)
+        );
+        pages[57] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You quickly jump out of the way. Brutus misses. Nice. You still don't have no idea how to defeat him. Lets keep him swinging at you and making him tired. Or are you trying to land a quick stab?",
+                new Choice("Quick stab",55),
+                new Choice("Make him tired",58)
+        );
+        pages[58] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "Lets make him tired. You try to avoid his attacks, until the interval between his attacks start to get longer. You feel yourself getting tired too. I don't know how long I can hold it out. " +
+                        "Lets try too keep this up a bit longer or maybe try to hit him? ",
+                new Choice("Hit him",59),
+                new Choice("Keep making him tired",60)
+        );
+        pages[59] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "He is tired, as are you. This doesn't mean you can't try to defeat him. After waiting for him to get slightly out of breath after dodging another attack, you quickly stab him right after his attack. " +
+                        "He didn't expect that. You hit him in the thigh. He gets down on one knee. He can't stand up because you hit his thigh muscle. You then try to hit him from behind, by running to his exposed back. He tries to turn while crouched on one knee. " +
+                        "Obviously this doesn't work and you hit him again. He falls over and screams while letting go of his swords. You go in for the final blow. ",
+                new Choice("Final blow",62)
+        );
+        pages[60] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You decide to keep doing what you do a little longer. Avoiding the attacks, you see he is getting really tired. He is almost out of breath and sometimes he even stops. " +
+                        "You however, are getting really tired too. Brutus swings his sword, you jump out of the way. Again. Again. This time, it went wrong. You tried to jump out of the way, but you tripped. " +
+                        "The ultimate pray for Brutus. This is his chance. You try to get up but you are really tired. ",
+                new Choice("Try to get up",61)
+        );
+        pages[61] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_dead,
+                R.drawable.stadium2,
+                "You try to get up. Brutus however is faster. He stabs you in your chest. The pain is unbearable. You try to scream, but its not possible because your lungs are filling with blood. Everything around you turns gray. You look up. You see the silhouette of Brutus. He makes a vague move which makes you fall on your back on the ground. " +
+                        "All you see is a bright sky and the silhouette of Brutus. He makes another unknown move. Then everything turns black. You are dead.",
+                new Choice("The Afterlife",66)
+        );
+        pages[62] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "This is the final blow. You stab him in his throat while he is dying on the ground. The crowd suddenly gets quiet... For a moment you can't believe you've won. Then the crowd cheers. Yes! You did it!",
+                new Choice("Win",65)
+        );
+        pages[63] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You stand your ground. Brutus comes at you. He swings his swords at you. You desperately try to block them. Your buckler shield is way to small for this kind of defensive work. You jump out of the way. " +
+                        "While doing this, you remember you should play dirty. What are you going to do. Keep jumping out of the his way, or try to throw sand in his face.",
+                new Choice("Jump out of his way",57),
+                new Choice("Play dirty",64)
+        );
+        pages[64] = new Page(
+                R.drawable.ic_slave_gladiator_experienced_sword_bucket,
+                R.drawable.stadium2,
+                "You start walking backwards to lure Brutus to you. He follows slowly. You then throw your shield at him. While he flinches, you stab him quickly. It's a hit! Brutus roars. " +
+                        "He still is a big threat. Brutus starts coming after you. You stand still and jump out of the way as he wants to attack you. Wounded he is much easier to dodge. You then run to your shield and pick it up. " +
+                        "As you do this you also grab a hand full of sand, unseen.",
+                new Choice("Grab some sand",49)
         );
         /********************************* Good ending Fight 2 *************************************/
-        pages[19] = new Page(
-                R.drawable.ic_slave_gladiator_noob_sword_shield,
-                R.drawable.stadium,
-                "He falls over. This all went a lot better then expected! You point your sword at him. Then look at the crowd in the stadium. " +
-                        "Lastly you point at the senator. You wait for his verdict. It gets really silent all of a sudden. The senator stands up..." +
-                        "\r\n Then he puts his thumb down. KILL! The crowd starts shouting and cheering. You should kill your opponent.",
-                new Choice("Kill him",30)
+        pages[65] = new Page(
+                R.drawable.ic_slave_gladiator_citizen,
+                R.drawable.roman_city,
+                "You've won! You have certainly earned your freedom! What a fight! Marcus sets you free. Now you're a Roman citizen! You get some money from Marcus and open a small pottery shop. You marry a former slave and you " +
+                        "hire slaves. You treat them all really well, because you know what it's like to be a slave. You live your life happily and get children. You tell them all your stories. The End. ",
+                new Choice("Main Menu",1)
         );
         /********************************* Bad ending Fight 2 *************************************/
-        pages[21] = new Page(
-                R.drawable.ic_slave_gladiator_noob_sword_shield,
-                R.drawable.stadium,
-                "You are in so much pain. You hear the crowd shouting. They want to see more blood. Then it gets really silent. " +
-                        "Your vision blurs. Suddenly you hear the crowd shouting and cheering again. I guess this is the end... " +
-                        "That is your last thought. You died.",
+        pages[66] = new Page(
+                R.drawable.ic_empty,
+                R.drawable.roman_city,
+                "Sadly you never saw freedom. You were born a slave and you died a slave. Life isn't fair sometimes. Just try to make the best of it.",
                 new Choice("Main Menu",1)
         );
     }
